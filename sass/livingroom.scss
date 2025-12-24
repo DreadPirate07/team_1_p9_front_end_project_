@@ -15,6 +15,8 @@ $font-heading: 'Space Grotesk', sans-serif;
 
 body{
   font-family: $font-heading;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .navbar {
@@ -76,7 +78,7 @@ body{
 .breadcrumb{
   a,span{
     color: $color-text-light;
-  
+    font-size: 30px;
   &:hover{
     color: $color-primary;
   }
@@ -94,7 +96,6 @@ body{
   border-radius: 12px;
   padding: 20px;
   
-  
   h5 {
     margin-bottom: 20px;
     font-size: 40px;
@@ -109,7 +110,7 @@ body{
     }
 
     label {
-      font-size: 14px;
+      font-size: 25px;
       color: $gray;
     }
     .form-check{
@@ -117,6 +118,7 @@ body{
       font-size: large;
       font-weight: bold;
     }
+    
   }
 }
 
@@ -172,7 +174,7 @@ body{
     padding: 15px;
 
     h6 {
-      font-size: 15px;
+      font-size: 20px;
       margin-bottom: 10px;
     }
 
