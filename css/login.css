@@ -1,0 +1,58 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+}
+
+.brand {
+  color: #fa6028;
+  font-weight: bold;
+}
+
+.forgot {
+  color: #fa6028;
+}
+
+.login-box {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 14px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 420px;
+}
+
+.btn-login {
+  background-color: rgba(250, 94, 40, 0.95);
+  color: #ffffff;
+  border: 2px solid rgba(250, 94, 40, 0.95);
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.25s ease;
+}
+.btn-login:hover {
+  background-color: #e66b2d;
+  border-color: #e66b2d;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(250, 94, 40, 0.25);
+}
+
+.img-container {
+  background-image: linear-gradient(rgba(250, 94, 40, 0.7), rgba(250, 94, 40, 0.7)), url("https://images.unsplash.com/photo-1556912173-3bb406ef7e77?w=1200&h=1200&fit=crop");
+  background-size: cover;
+  background-position: center;
+}
+
+.social:hover {
+  border-color: #fa6028;
+  color: #fa6028;
+}
+
+.text-orange {
+  color: #e66b2d;
+}
+
+.overlay-content {
+  max-width: 500px;
+}
+
+/*# sourceMappingURL=login.css.map */
