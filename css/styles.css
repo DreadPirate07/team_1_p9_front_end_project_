@@ -65,22 +65,19 @@ ul {
   font-size: 1.5rem;
   font-weight: bold;
 }
-.navbar__links {
-  display: flex;
-  gap: 30px;
-}
-.navbar__links a {
-  font-weight: 500;
-  color: #6b7280;
-}
-.navbar__links a:hover, .navbar__links a.active {
-  color: #1f2937;
-}
 .navbar__icons {
   display: flex;
   gap: 20px;
   font-size: 1.1rem;
   cursor: pointer;
+}
+
+.nav-page {
+  color: #1f2937;
+}
+
+.nav-page:hover {
+  color: #e3732d;
 }
 
 .hero {
