@@ -1,0 +1,282 @@
+/* =====================
+   VARIABLES (FROM styles.scss)
+   (Do NOT change values)
+===================== */
+
+$color-primary: #e3732d;
+$color-primary-dark: #c15817;
+$color-bg-light: #f9f9f9;
+$color-text-dark: #1f2937;
+$color-text-light: #6b7280;
+$color-white: #ffffff;
+$color-border: #e5e7eb;
+
+$font-heading: 'Space Grotesk', sans-serif;
+$font-body: 'Inter', sans-serif;
+
+$container-width: 1200px;
+
+/* =====================
+   BASE
+===================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-body;
+  color: $color-text-light;
+  line-height: 1.6;
+  
+}
+
+/* =====================
+   HERO
+===================== */
+
+.about-hero {
+  height: 500px;
+  background-image: 
+        url("../images/about-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  position: relative;
+  
+
+  
+}
+.hero-overlay{
+  position:absolute;
+  inset: 0;
+  background: rgb(0,0,0,0.15);
+}
+
+
+.about-hero-content {
+  max-width: $container-width;
+  z-index: 1;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+
+  h1 {
+    font-family: $font-heading;
+    font-size: 48px;
+    color: $color-white;
+
+    span {
+      color: $color-primary;
+    }
+  }
+
+  p {
+    font-size: 18px;
+    margin-top: 10px;
+    color: $color-white;
+  }
+}
+
+/* =====================
+   OUR STORY
+===================== */
+
+.our-story {
+  padding: 80px 10%;
+  background: $color-white;
+
+  .story-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+  }
+
+  h2 {
+    font-family: $font-heading;
+    font-size: 36px;
+    color: $color-text-dark;
+    margin-bottom: 20px;
+
+    span {
+      color: $color-primary;
+    }
+    &::after {
+      content: "";
+      display: block;
+      width: 80px;          // length of line
+      height: 4px;          // thickness
+      background-color: $color-primary; // bright orange
+      margin-top: 10px;
+    }
+
+    
+  }
+
+  p {
+    font-size: 16px;
+    color: $color-text-light;
+    margin-bottom: 15px;
+    line-height: 1.7;
+  }
+
+  .story-image img {
+    width: 100%;
+    border-radius: 16px;
+    object-fit: cover;
+  }
+}
+
+/* =====================
+   OUR VALUES
+===================== */
+
+.our-values {
+  padding: 80px 10%;
+  background: $color-bg-light;
+  text-align: center;
+
+  h2 {
+    font-family: $font-heading;
+    font-size: 36px;
+    color: $color-text-dark;
+    margin-bottom: 60px;
+
+     span {
+      color: $color-primary;
+    }
+  }
+
+  .values-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+  }
+
+  .value-card {
+    text-align: center;
+
+    
+      .icon {
+  width: 60px;
+  height: 60px;
+  background: rgba($color-primary,0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+
+  i {
+    font-size: 26px;
+    color: $color-primary;
+  }
+}
+
+    h3 {
+      font-family: $font-heading;
+      font-size: 20px;
+      color: $color-text-dark;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 15px;
+      color: $color-text-light;
+    }
+  }
+}
+
+/* =====================
+   TEAM (BOOTSTRAP GRID)
+===================== */
+
+.team {
+  padding: 80px 0;
+  background: $color-white;
+  text-align: center;
+
+  h2 {
+    font-family: $font-heading;
+    font-size: 36px;
+    font-weight: 600;
+   
+    color: $color-text-dark ;
+    line-height: 1.2;
+
+    span {
+      font-size: 36px;
+      font-family: $font-heading;
+      color: $color-primary;                   
+      
+      font-weight: 600;
+    }
+
+    
+  }
+
+  .team-desc {
+    max-width: 650px;
+    margin: 10px auto 50px;
+    color: $color-text-light;
+    font-family: $font-body;
+  }
+
+  img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid $color-border;
+  }
+
+  h5 {
+    margin-top: 12px;
+    font-family: $font-heading;
+    color: $color-text-dark;
+  }
+
+  span {
+    font-size: 14px;
+    color: $color-text-light;
+  }
+}
+
+/* =====================
+   CTA
+===================== */
+
+.about-cta {
+  background: $color-primary;
+  padding: 80px 20px;
+  text-align: center;
+
+  h1 {
+    font-family: $font-heading;
+    font-size: 42px;
+    color: $color-white;
+  }
+
+  p {
+    margin: 15px 0 30px;
+    color: $color-white;
+  }
+
+  button {
+    background: $color-text-dark;
+    color: $color-white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+
+    &:hover {
+      background: $color-primary-dark;
+    }
+  }
+}
