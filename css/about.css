@@ -1,0 +1,226 @@
+/* =====================
+   VARIABLES (FROM styles.scss)
+   (Do NOT change values)
+===================== */
+/* =====================
+   BASE
+===================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+/* =====================
+   HERO
+===================== */
+.about-hero {
+  height: 500px;
+  background-image: url("../images/about-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.about-hero-content {
+  max-width: 1200px;
+  z-index: 1;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+}
+.about-hero-content h1 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 48px;
+  color: #ffffff;
+}
+.about-hero-content h1 span {
+  color: #e3732d;
+}
+.about-hero-content p {
+  font-size: 18px;
+  margin-top: 10px;
+  color: #ffffff;
+}
+
+/* =====================
+   OUR STORY
+===================== */
+.our-story {
+  padding: 80px 10%;
+  background: #ffffff;
+}
+.our-story .story-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+.our-story h2 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 36px;
+  color: #1f2937;
+  margin-bottom: 20px;
+}
+.our-story h2 span {
+  color: #e3732d;
+}
+.our-story h2::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background-color: #e3732d;
+  margin-top: 10px;
+}
+.our-story p {
+  font-size: 16px;
+  color: #6b7280;
+  margin-bottom: 15px;
+  line-height: 1.7;
+}
+.our-story .story-image img {
+  width: 100%;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+/* =====================
+   OUR VALUES
+===================== */
+.our-values {
+  padding: 80px 10%;
+  background: #f9f9f9;
+  text-align: center;
+}
+.our-values h2 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 36px;
+  color: #1f2937;
+  margin-bottom: 60px;
+}
+.our-values h2 span {
+  color: #e3732d;
+}
+.our-values .values-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+.our-values .value-card {
+  text-align: center;
+}
+.our-values .value-card .icon {
+  width: 60px;
+  height: 60px;
+  background: rgba(227, 115, 45, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+.our-values .value-card .icon i {
+  font-size: 26px;
+  color: #e3732d;
+}
+.our-values .value-card h3 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 20px;
+  color: #1f2937;
+  margin-bottom: 10px;
+}
+.our-values .value-card p {
+  font-size: 15px;
+  color: #6b7280;
+}
+
+/* =====================
+   TEAM (BOOTSTRAP GRID)
+===================== */
+.team {
+  padding: 80px 0;
+  background: #ffffff;
+  text-align: center;
+}
+.team h2 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  color: #1f2937;
+  line-height: 1.2;
+}
+.team h2 span {
+  font-size: 36px;
+  font-family: "Space Grotesk", sans-serif;
+  color: #e3732d;
+  font-weight: 600;
+}
+.team .team-desc {
+  max-width: 650px;
+  margin: 10px auto 50px;
+  color: #6b7280;
+  font-family: "Inter", sans-serif;
+}
+.team img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #e5e7eb;
+}
+.team h5 {
+  margin-top: 12px;
+  font-family: "Space Grotesk", sans-serif;
+  color: #1f2937;
+}
+.team span {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* =====================
+   CTA
+===================== */
+.about-cta {
+  background: #e3732d;
+  padding: 80px 20px;
+  text-align: center;
+}
+.about-cta h1 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 42px;
+  color: #ffffff;
+}
+.about-cta p {
+  margin: 15px 0 30px;
+  color: #ffffff;
+}
+.about-cta button {
+  background: #1f2937;
+  color: #ffffff;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+}
+.about-cta button:hover {
+  background: #c15817;
+}
+
+/*# sourceMappingURL=about.css.map */

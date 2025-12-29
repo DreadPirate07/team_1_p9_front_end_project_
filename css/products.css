@@ -1,0 +1,138 @@
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(237, 237, 237);
+    width: 100%;
+    padding: 64px 0px;
+    margin-top: 73.6px;
+    text-align: center;
+}
+
+.heading h1{
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 50px;
+    font-weight: 500;
+    color: black;
+    background-color: transparent;
+}
+
+.heading2 {
+    margin-bottom: 0px;
+}
+
+.paragraph{
+    font-family: "Inter", sans-serif;
+    color: rgb(94, 94, 94);
+    margin: 0px 25%;
+    font-size:20px;
+    background-color: transparent;
+}
+.paragraph p {
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.card-body-custom{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 2;
+}
+
+.cardview {
+    padding: 64px 0px;
+}
+
+.cdt {
+    margin-bottom: 8px;
+    font-family: "Space Grotesk", sans-serif;
+    color: white;
+    font-size: 24px;
+}
+.cd-p {
+    font-family: "Inter", sans-serif;
+    margin-bottom: 4px;
+    color: white;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.cd-pp{
+    color: #e3864c;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.below-section {
+    padding-top: 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(237, 237, 237);
+}
+
+.feature-card {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    background-color: rgb(237, 237, 237);
+
+}
+
+.feature-card-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 40px;
+    border: 1px solid rgb(225, 225, 225);
+    border-radius: 8px;
+}
+
+.iconn {
+    font-size: xx-large;
+    margin-bottom: 15px;
+}
+
+.custom-card {
+    overflow: hidden;
+    position: relative;
+}
+
+.custom-card img {
+    transition: transform 0.6s ease;
+}
+
+.custom-card:hover img {
+    transform: scale(1.05);
+}
+
+.custom-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.8),
+        rgba(0, 0, 0, 0)
+    );
+    z-index: 1;
+    pointer-events: none;
+}
+
+.custom-card:hover::after {
+    opacity: 1;
+}
+
+.serene {
+    color: #e3732d;
+}
