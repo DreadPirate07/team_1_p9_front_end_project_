@@ -18,6 +18,10 @@ body {
   color: #fa6028;
 }
 
+.forgot p{
+  font-weight: bold;
+}
+
 .form-control {
   background-color: #ffffff;
   border: 1px solid #ddd;
