@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&display=swap");
-
 body {
   font-family: "Space Grotesk", sans-serif;
 }
@@ -12,20 +11,16 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 20px;
+  padding: 20px;
   background: #ffffff;
 }
-
 .navbar__logo {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font-size: 1.5rem;
   font-weight: bold;
   color: #1f2937;
-  text-decoration: none ;
+  text-decoration: none;
 }
-
-
-
 .navbar__icons {
   display: flex;
   gap: 20px;
@@ -33,11 +28,9 @@ body {
   cursor: pointer;
 }
 
-
 .nav-page {
   color: #1f2937;
 }
-
 .nav-page:hover {
   color: #e3732d;
 }
@@ -45,9 +38,7 @@ body {
 .contact-area {
   min-height: 100vh;
   padding-top: 80px;
-  background: linear-gradient(rgba(250, 94, 40, 0.6),
-      rgba(250, 94, 40, 0.6)),
-    url("https://images.unsplash.com/photo-1600494448850-6013c64ba722");
+  background: linear-gradient(rgba(250, 94, 40, 0.6), rgba(250, 94, 40, 0.6)), url("https://images.unsplash.com/photo-1600494448850-6013c64ba722");
   background-size: cover;
   background-position: center;
 }
@@ -86,7 +77,6 @@ body {
   padding: 12px;
   font-weight: 600;
 }
-
 .btn-send:hover {
   background-color: #e66b2d;
   border-color: #e66b2d;
@@ -99,9 +89,8 @@ body {
   background-color: #262626;
   color: #d1d5db;
   padding: 50px 0 20px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
-
 .footer .newsletter {
   display: flex;
   justify-content: space-between;
@@ -110,34 +99,28 @@ body {
   flex-wrap: wrap;
   gap: 20px;
 }
-
 .footer .newsletter__text {
   display: flex;
   align-items: center;
   gap: 15px;
 }
-
 .footer .newsletter__text i {
   font-size: 2rem;
   color: #e3732d;
 }
-
 .footer .newsletter__text h4 {
   color: #ffffff;
   margin-bottom: 2px;
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: "Space Grotesk", sans-serif;
 }
-
 .footer .newsletter__text p {
   font-size: 0.9rem;
   color: #9ca3af;
 }
-
 .footer .newsletter__form {
   display: flex;
   gap: 10px;
 }
-
 .footer .newsletter__form input {
   padding: 10px 15px;
   border-radius: 4px;
@@ -145,9 +128,8 @@ body {
   background: #333;
   color: #ffffff;
   width: 300px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
-
 .footer .newsletter__form button {
   padding: 10px 20px;
   background-color: #e3732d;
@@ -158,62 +140,51 @@ body {
   color: #000;
   transition: background-color 0.3s;
 }
-
 .footer .newsletter__form button:hover {
   background-color: #c15817;
 }
-
 .footer__divider {
   border: 0;
   border-top: 1px solid #444;
   margin-bottom: 40px;
 }
-
 .footer__links {
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
   margin-bottom: 40px;
 }
-
 .footer__links .footer__col {
   flex: 1;
   min-width: 200px;
 }
-
 .footer__links .footer__col h3 {
   color: #ffffff;
   margin-bottom: 20px;
   font-size: 1.1rem;
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: "Space Grotesk", sans-serif;
 }
-
 .footer__links .footer__col p {
   font-size: 0.9rem;
   color: #9ca3af;
 }
-
 .footer__links .footer__col ul li {
   margin-left: -24px;
   margin-bottom: 10px;
 }
-
 .footer__links .footer__col ul li a {
   color: #d1d5db;
   text-decoration: none;
   transition: color 0.3s;
 }
-
 .footer__links .footer__col ul li a:hover {
   color: #e3732d;
 }
-
 .footer__links .footer__col .social-icons {
   margin-top: 20px;
   display: flex;
   gap: 15px;
 }
-
 .footer__links .footer__col .social-icons a {
   width: 35px;
   height: 35px;
@@ -226,12 +197,10 @@ body {
   color: #ffffff;
   text-decoration: none;
 }
-
 .footer__links .footer__col .social-icons a:hover {
   background: #e3732d;
-  color: #000000;
+  color: #000;
 }
-
 .footer__bottom {
   border-top: 1px solid #333;
   padding-top: 20px;
@@ -242,3 +211,5 @@ body {
   flex-wrap: wrap;
   gap: 10px;
 }
+
+/*# sourceMappingURL=contact.css.map */
