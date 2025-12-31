@@ -113,6 +113,11 @@ form-control:focus {
   text-decoration: none;
 }
 
+.index-link {
+  color: #fa6028;
+  text-decoration: none;
+}
+
 .signup-link:hover {
   text-decoration: underline;
 }
