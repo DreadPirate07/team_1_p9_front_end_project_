@@ -1,28 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
+  <meta charset="UTF-8">
+  <title>Shopping Cart</title>
 
-     <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-  <!-- Bootstrap CSS-->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-   
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
   <!-- CSS -->
-  <link rel="stylesheet" href="../css/about.css">
+  <link rel="stylesheet" href="../css/cart.css">
 </head>
 
 <body>
 
 
-
-  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white py-3">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white py-3">
             <div class="container">
          
                 <a class="navbar__logo fw-bold fs-4" href="#">
@@ -67,139 +65,128 @@
             </div>
     </nav>
 
-    <main class="about-page">
-  <!-- HERO -->
-<section class="about-hero">
-  <div class="hero-overlay"></div>
-  <div class="container">
-  <div class="about-hero-content">
-    <h1>About <span>Serene Studio</span></h1>
-    <p>Crafting beautiful spaces with timeless furniture pieces since 2015</p>
+
+<div class="cart-wrapper container">
+  <h2 class="cart-title mb-4">Shopping <span>Cart</span></h2>
+
+  <div class="row g-4">
+    <!-- LEFT -->
+    <div class="col-lg-8">
+      <div class="cart-box">
+
+        <div class="cart-item">
+         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVBu74X2iHmoU5LbIuKA03iZuGy0RaHbMHng&s">
+
+          <div class="flex-grow-1">
+            <div class="item-title">Lorenzo Curved Sofa </div>
+            <div class="text-muted">₹20,299</div>
+           <div class="qty-box mt-2 d-flex align-items-center gap-3">
+       <div class="qty-controls">
+         <button class="qty-btn">-</button>
+         <span>1</span>
+          <button class="qty-btn">+</button>
+        </div>
+
+  <button class="delete-btn" title="Remove item">
+    <i class="bi bi-trash"></i>
+  </button>
+</div>
+          </div>
+          <div class="item-price">₹20,299</div>
+        </div>
+
+        <div class="cart-item">
+          
+        <img src="https://ouchcart.com/cdn/shop/files/63_Velvet_Round_Arm_Curved_Sofa_3_600x_267d0e63-6f14-4d4d-a96b-db389b4933c9.webp?v=1721402965&width=600">
+          <div class="flex-grow-1">
+            <div class="item-title">Velvet Contemperory Sofa </div>
+             <div class="text-muted">₹15,299</div>
+              <div class="qty-box mt-2 d-flex align-items-center gap-3">
+       <div class="qty-controls">
+         <button class="qty-btn">-</button>
+         <span>2</span>
+          <button class="qty-btn">+</button>
+        </div>
+
+  <button class="delete-btn" title="Remove item">
+    <i class="bi bi-trash"></i>
+  </button>
+</div>
+           
+          </div>
+          <div class="item-price">₹30,598</div>
+          
+        </div>
+
+        <div class="cart-item">
+                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd_EP7YzIf7V9laNst5zhR1iLfTA1vRdGM3w&s">
+
+
+          <div class="flex-grow-1">
+            <div class="item-title">Luxe Velvet Sofa</div>
+            <div class="text-muted">₹5,329</div>
+            <div class="qty-box mt-2 d-flex align-items-center gap-3">
+       <div class="qty-controls">
+         <button class="qty-btn">-</button>
+         <span>1</span>
+          <button class="qty-btn">+</button>
+        </div>
+
+       <button class="delete-btn" title="Remove item">
+           <i class="bi bi-trash"></i>
+       </button>
+         </div>
+          </div>
+          <div class="item-price">₹5,329</div>
+        </div>
+
+        <a href="#" class="text-decoration-none text-muted">
+          ← Continue Shopping
+        </a>
+      </div>
     </div>
+
+    <!-- RIGHT -->
+    <div class="col-lg-4">
+      <div class="summary-box">
+        <h5>Order <span> Summary  </span></h5>
+
+        <div class="summary-row">
+          <span>Subtotal</span><strong>₹56,226</strong>
+        </div>
+        <div class="summary-row">
+          <span>Shipping</span><strong>Free</strong>
+        </div>
+        <div class="summary-row">
+          <span>Tax</span><strong>₹202.08</strong>
+        </div>
+
+        <div class="summary-row summary-total">
+          <span>Total</span><span>₹56,428.08</span>
+        </div>
+
+        <button class="btn-orange w-100 mt-3">
+          Proceed to Checkout
+        </button>
+
+        <button class="btn-outline-orange w-100 mt-2">
+          Apply Promo Code
+        </button>
+
+        <div class="mt-4">
+          <small class="text-muted">We Accept</small>
+          <div class="d-flex gap-2 payment mt-2">
+            <span>Visa</span>
+            <span>Mastercard</span>
+            <span>Amex</span>
+            <span>PayPal</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
-</section>
-
-
- <section class="our-story">
-  <div class="container">
-  <div class="story-container">
-    
-    <div class="story-text">
-      <h2>Our <span>Story</span></h2>
-
-      <p>
-        Serene Studio was born from a simple belief: every home deserves
-        furniture that combines beauty, comfort, and sustainability.
-        What started as a small workshop has grown into a beloved
-        destination for those seeking thoughtfully designed pieces.
-      </p>
-
-      <p>
-        Our journey began with a passion for craftsmanship and a
-        commitment to quality. We work with skilled artisans and
-        sustainable materials to create furniture that tells a story
-        and stands the test of time.
-      </p>
-
-      <p>
-        Today, we're proud to serve thousands of happy customers,
-        helping them transform their houses into homes filled with
-        warmth, style, and serenity.
-      </p>
-    </div>
-
-    <div class="story-image">
-      <img src="../images/our-story.jpg" alt="Our Story Image">
-    </div>
-  </div>
-  </div>
-</section>
-    
-
-
-
-<!-- VALUES -->
-<!-- OUR VALUES -->
-<section class="our-values">
-  <h2>Our <Span> Values </Span></h2>
-
-  <div class="values-grid">
-    <div class="value-card">
-      <div class="icon">
-        <i class=" bi bi-heart-fill"></i>
-      </div>
-      <h3>Passion</h3>
-      <p>We pour our heart into every piece we create.</p>
-    </div>
-
-    <div class="value-card">
-      <div class="icon">
-        <i class="bi bi-award-fill"></i>
-      </div>
-      <h3>Quality</h3>
-      <p>Premium materials and expert craftsmanship.</p>
-    </div>
-
-    <div class="value-card">
-      <div class="icon">
-        <i class="bi bi-recycle"></i>
-      </div>
-      <h3>Sustainability</h3>
-      <p>Eco-friendly practices and responsible sourcing.</p>
-    </div>
-
-    <div class="value-card">
-      <div class="icon">
-        <i class="bi bi-people-fill"></i>
-      </div>
-      <h3>Community</h3>
-      <p>Building lasting relationships with people.</p>
-    </div>
-  </div>
-</section>
-
-
-<!-- Team in bootstrap -->
-<section class="team">
-  <div class="container">
-
-    <h2 class="mb-2">Meet <span>Our Team</span></h2>
-    <p class="team-desc mb-5">
-      Our talented team of designers, craftspeople, and customer service experts
-      work together to bring you the best furniture experience.
-    </p>
-
-    <div class="row justify-content-center">
-      
-      <div class="col-md-4 text-center mb-4">
-        <img src="../images/team-sarah.jpg" class="img-fluid rounded-circle mb-3" alt="Sarah Johnson">
-        <h5>Sarah Johnson</h5>
-        <span class="text-muted">Founder & Creative Director</span>
-      </div>
-
-      <div class="col-md-4 text-center mb-4">
-        <img src="../images/team-michael.jpg" class="img-fluid rounded-circle mb-3" alt="Michael Chen">
-        <h5>Michael Chen</h5>
-        <span class="text-muted">Head of Design</span>
-      </div>
-
-      <div class="col-md-4 text-center mb-4">
-        <img src="../images/team-emily.jpg" class="img-fluid rounded-circle mb-3" alt="Emily Rodriguez">
-        <h5>Emily Rodriguez</h5>
-        <span class="text-muted">Customer Experience Lead</span>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- CTA -->
-<section class="about-cta">
-  <h1>Ready to Transform Your Space?</h1>
-  <p>Explore our collections and discover furniture that speaks to your style</p>
-  <button>Shop Now</button>
-</section>
-    </main>
+</div>
 
 <footer class="footer">
         <div class="container">
@@ -261,6 +248,7 @@
             </div>
         </div>
     </footer>
+    
 
 </body>
 </html>
