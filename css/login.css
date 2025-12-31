@@ -36,7 +36,7 @@ body {
   border: 1px solid #ddd;
 }
 
-form-control:focus {
+.form-control:focus {
   border-color: #fa5e28;
   box-shadow: 0 0 0 0.15rem rgba(250, 94, 40, 0.25);
 }
