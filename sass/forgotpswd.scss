@@ -1,0 +1,73 @@
+
+$primary: #fa6028;
+$primary-dark: #e66b2d;
+$white: #ffffff;
+$border-light: #ddd;
+$shadow-primary: rgba(250, 94, 40, 0.25);
+$font-main: "Space Grotesk", sans-serif;
+
+
+body {
+  font-family: $font-main;
+}
+
+
+.brand {
+  color: $primary;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+
+.img-container {
+  background-image: 
+    linear-gradient(rgba(250, 94, 40, 0.7), rgba(250, 94, 40, 0.7)),
+    url("https://images.unsplash.com/photo-1564078516393-cf04bd966897");
+  background-size: cover;
+  background-position: center;
+}
+
+
+.forgot {
+  color: $primary;
+}
+
+
+.form-control {
+  background-color: $white;
+  border: 1px solid $border-light;
+
+  &:focus {
+    border-color: $primary;
+    box-shadow: 0 0 0 0.15rem rgba(250, 94, 40, 0.25);
+  }
+}
+
+
+.btn-create {
+  background-color: rgba(250, 94, 40, 0.95);
+  color: $white;
+  border: 2px solid rgba(250, 94, 40, 0.95);
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.25s ease;
+
+  &:hover {
+    background-color: $primary-dark;
+    border-color: $primary-dark;
+    color: $white;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px $shadow-primary;
+  }
+}
+
+
+.login-link {
+  color: $primary;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

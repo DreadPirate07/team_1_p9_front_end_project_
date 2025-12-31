@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&display=swap");
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.brand {
+  color: #fa6028;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.img-container {
+  background-image: linear-gradient(rgba(250, 94, 40, 0.7), rgba(250, 94, 40, 0.7)), url("https://images.unsplash.com/photo-1564078516393-cf04bd966897");
+  background-size: cover;
+  background-position: center;
+}
+
+.forgot {
+  color: #fa6028;
+}
+
+.forgot p{
+  font-weight: bold;
+}
+
+.form-control {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+}
+.form-control:focus {
+  border-color: #fa6028;
+  box-shadow: 0 0 0 0.15rem rgba(250, 94, 40, 0.25);
+}
+
+.btn-create {
+  background-color: rgba(250, 94, 40, 0.95);
+  color: #ffffff;
+  border: 2px solid rgba(250, 94, 40, 0.95);
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.25s ease;
+}
+
+.btn-create:hover {
+  background-color: #e66b2d;
+  border-color: #e66b2d;
+  color: #ffffff;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(250, 94, 40, 0.25);
+}
+
+.login-link {
+  color: #fa6028;
+  text-decoration: none;
+}
+.login-link:hover {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=forgotpswd.css.map */
