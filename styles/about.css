@@ -1,0 +1,409 @@
+/* =====================
+   VARIABLES (FROM styles.scss)
+   (Do NOT change values)
+===================== */
+/* =====================
+   BASE
+===================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: #6b7280;
+  line-height: 1.6;
+  padding-top: 90px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.btn {
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  font-size: 1rem;
+}
+.btn-primary {
+  background-color: #e3732d;
+  color: #1f2937;
+}
+.btn-primary:hover {
+  background-color: #c15817;
+}
+.btn-outline {
+  background-color: transparent;
+  border: 2px solid #1f2937;
+  color: #1f2937;
+}
+.btn-outline:hover {
+  background-color: #1f2937;
+  color: #ffffff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+  background: #ffffff;
+}
+.navbar__logo {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #262626;
+}
+.navbar__icons {
+  display: flex;
+  gap: 20px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.nav-page {
+  color: #1f2937;
+}
+
+.nav-page:hover {
+  color: #e3732d;
+}
+
+/* =====================
+   HERO
+===================== */
+.about-page .about-hero {
+  height: 500px;
+  background-image: url("../images/about-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-top: 120px;
+}
+.about-page .hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.15);
+}
+.about-page .about-hero-content {
+  max-width: 1200px;
+  z-index: 1;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+}
+.about-page .about-hero-content h1 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 48px;
+  color: #ffffff;
+}
+.about-page .about-hero-content h1 span {
+  color: #e3732d;
+}
+.about-page .about-hero-content p {
+  font-size: 18px;
+  margin-top: 10px;
+  color: #ffffff;
+}
+.about-page {
+  /* =====================
+     OUR STORY
+  ===================== */
+}
+.about-page .our-story {
+  padding: 80px 10%;
+  background: #ffffff;
+}
+.about-page .our-story .story-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+.about-page .our-story h2 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 36px;
+  color: #1f2937;
+  margin-bottom: 20px;
+}
+.about-page .our-story h2 span {
+  color: #e3732d;
+}
+.about-page .our-story h2::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background-color: #e3732d;
+  margin-top: 10px;
+}
+.about-page .our-story p {
+  font-size: 16px;
+  color: #6b7280;
+  margin-bottom: 15px;
+  line-height: 1.7;
+}
+.about-page .our-story .story-image img {
+  width: 100%;
+  border-radius: 16px;
+  object-fit: cover;
+}
+.about-page .our-story .custom-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.about-page {
+  /* =====================
+     OUR VALUES
+  ===================== */
+}
+.about-page .our-values {
+  padding: 80px 10%;
+  background: #f9f9f9;
+  text-align: center;
+}
+.about-page .our-values h2 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 36px;
+  color: #1f2937;
+  margin-bottom: 60px;
+}
+.about-page .our-values h2 span {
+  color: #e3732d;
+}
+.about-page .our-values .values-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+.about-page .our-values .value-card {
+  text-align: center;
+}
+.about-page .our-values .value-card .icon {
+  width: 60px;
+  height: 60px;
+  background: rgba(227, 115, 45, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+.about-page .our-values .value-card .icon i {
+  font-size: 26px;
+  color: #e3732d;
+}
+.about-page .our-values .value-card h3 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 20px;
+  color: #1f2937;
+  margin-bottom: 10px;
+}
+.about-page .our-values .value-card p {
+  font-size: 15px;
+  color: #6b7280;
+}
+.about-page {
+  /* =====================
+     TEAM (BOOTSTRAP GRID)
+  ===================== */
+}
+.about-page .team {
+  padding: 80px 0;
+  background: #ffffff;
+  text-align: center;
+}
+.about-page .team h2 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  color: #1f2937;
+  line-height: 1.2;
+}
+.about-page .team h2 span {
+  font-size: 36px;
+  font-family: "Space Grotesk", sans-serif;
+  color: #e3732d;
+  font-weight: 600;
+}
+.about-page .team .team-desc {
+  max-width: 650px;
+  margin: 10px auto 50px;
+  color: #6b7280;
+  font-family: "Inter", sans-serif;
+}
+.about-page .team img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #e5e7eb;
+}
+.about-page .team h5 {
+  margin-top: 12px;
+  font-family: "Space Grotesk", sans-serif;
+  color: #1f2937;
+}
+.about-page .team span {
+  font-size: 14px;
+  color: #6b7280;
+}
+.about-page {
+  /* =====================
+     CTA
+  ===================== */
+}
+.about-page .about-cta {
+  background: #e3732d;
+  padding: 80px 20px;
+  text-align: center;
+}
+.about-page .about-cta i h1 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 42px;
+  color: #ffffff;
+}
+.about-page .about-cta p {
+  margin: 15px 0 30px;
+  color: #ffffff;
+}
+.about-page .about-cta button {
+  background: #1f2937;
+  color: #ffffff;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+}
+.about-page .about-cta button:hover {
+  background: #c15817;
+}
+
+.footer {
+  background-color: #262626;
+  color: #d1d5db;
+  padding: 50px 0 20px;
+}
+.footer .newsletter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.footer .newsletter__text {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.footer .newsletter__text i {
+  font-size: 2rem;
+  color: #e3732d;
+}
+.footer .newsletter__text h4 {
+  color: white;
+  margin-bottom: 2px;
+}
+.footer .newsletter__text p {
+  font-size: 0.9rem;
+}
+.footer .newsletter__form {
+  display: flex;
+  gap: 10px;
+}
+.footer .newsletter__form input {
+  padding: 10px 15px;
+  border-radius: 4px;
+  border: 1px solid #444;
+  background: #333;
+  color: white;
+  width: 300px;
+}
+.footer .newsletter__form button {
+  padding: 10px 20px;
+  background-color: #e3732d;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.footer .newsletter__form button:hover {
+  background-color: #c15817;
+}
+.footer__divider {
+  border: 0;
+  border-top: 1px solid #444;
+  margin-bottom: 40px;
+}
+.footer__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+.footer__links .footer__col {
+  flex: 1;
+  min-width: 200px;
+}
+.footer__links .footer__col h3 {
+  color: white;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+.footer__links .footer__col p {
+  font-size: 0.9rem;
+  color: #9ca3af;
+}
+.footer__links .footer__col ul li {
+  margin-left: -24px;
+  margin-bottom: 10px;
+}
+.footer__links .footer__col ul li a:hover {
+  color: #e3732d;
+}
+.footer__links .footer__col .social-icons {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+}
+.footer__links .footer__col .social-icons a {
+  width: 35px;
+  height: 35px;
+  background: #333;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+.footer__links .footer__col .social-icons a:hover {
+  background: #e3732d;
+  color: #000;
+}
+.footer__bottom {
+  border-top: 1px solid #333;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+/*# sourceMappingURL=about.css.map */
