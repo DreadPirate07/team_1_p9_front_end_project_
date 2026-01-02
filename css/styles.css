@@ -59,6 +59,7 @@ ul {
   align-items: center;
   padding: 20px 20px;
   background: #ffffff;
+  box-shadow: #262626;
 }
 .navbar__logo {
   font-family: "Space Grotesk", sans-serif;
