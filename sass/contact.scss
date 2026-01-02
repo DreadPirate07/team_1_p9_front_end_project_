@@ -47,6 +47,8 @@ body {
 
 .nav-page {
   color: $text-dark;
+  font-family: $font-body;
+  font-weight:bolder;
 
   &:hover {
     color: $primary-color;
