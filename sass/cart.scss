@@ -1,7 +1,3 @@
-/* =====================
-   VARIABLES (FROM styles.scss)
-   (Do NOT change values)
-===================== */
 
 $color-primary: #e3732d;
 $color-primary-dark: #c15817;
@@ -14,29 +10,36 @@ $color-footer-bg: #262626;
 
 $font-heading: 'Space Grotesk', sans-serif;
 $font-body: 'Inter', sans-serif;
-
 $container-width: 1200px;
 
-/* =====================
-   BASE
-===================== */
-
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* ========== GLOBAL ========== */
 body {
+  background: $color-bg-light;
   font-family: $font-body;
-  color: $color-text-light;
+  color: $color-text-dark;
   line-height: 1.6;
   padding-top: 90px;
-  
 }
+
+h2, h5 {
+  font-family: $font-heading;
+}
+
+
 a { text-decoration: none; color: inherit; }
 ul { list-style: none; }
 
+.container {
+    max-width: $container-width;
+    margin: 0 auto;
+    padding: 0 20px;
+}
 
 .btn {
     padding: 12px 24px;
@@ -74,7 +77,6 @@ ul { list-style: none; }
         font-family: $font-heading;
         font-size: 1.5rem;
         font-weight: bold;
-        color: #262626;
     }
 
     
@@ -96,264 +98,166 @@ ul { list-style: none; }
 }
 
 
-/* =====================
-   HERO
-===================== */
-.about-page{
-
-
-.about-hero {
-  height: 500px;
-  background-image: 
-        url("../images/about-bg.jpg");
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  position: relative;
-  padding-top: 120px;
-  
-
-  
-}
-.hero-overlay{
-  position:absolute;
-  inset: 0;
-  background: rgb(0,0,0,0.15);
-}
-
-
-.about-hero-content {
+/* ========== CART WRAPPER ========== */
+.cart-wrapper {
   max-width: $container-width;
-  z-index: 1;
-  margin: 0 auto;
-  padding: 0 20px;
-  position: relative;
+  margin: 40px auto;
+}
 
-  h1 {
-    font-family: $font-heading;
-    font-size: 48px;
-    color: $color-white;
+.cart-title {
+  font-family: $font-heading;
+  font-size: 32px;
+  margin-bottom: 30px;
 
-    span {
-      color: $color-primary;
-    }
-  }
-
-  p {
-    font-size: 18px;
-    margin-top: 10px;
-    color: $color-white;
+  span {
+    color: $color-primary; // orange
   }
 }
 
-/* =====================
-   OUR STORY
-===================== */
-
-.our-story {
-  padding: 80px 10%;
+/* ========== BOXES ========== */
+.cart-box,
+.summary-box {
   background: $color-white;
-
-  .story-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
-    align-items: center;
-  }
-
-  h2 {
-    font-family: $font-heading;
-    font-size: 36px;
-    color: $color-text-dark;
-    margin-bottom: 20px;
-
-    span {
-      color: $color-primary;
-    }
-    &::after {
-      content: "";
-      display: block;
-      width: 80px;          // length of line
-      height: 4px;          // thickness
-      background-color: $color-primary; // bright orange
-      margin-top: 10px;
-    }
-
-    
-  }
-
-  p {
-    font-size: 16px;
-    color: $color-text-light;
-    margin-bottom: 15px;
-    line-height: 1.7;
-  }
-
-  .story-image img {
-    width: 100%;
-    border-radius: 16px;
-    object-fit: cover;
-  }
-
-  .custom-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
+  border: 1px solid $color-border;
+  border-radius: 16px;
+  padding: 20px;
 }
 
-/* =====================
-   OUR VALUES
-===================== */
-
-.our-values {
-  padding: 80px 10%;
-  background: $color-bg-light;
-  text-align: center;
-
-  h2 {
-    font-family: $font-heading;
-    font-size: 36px;
-    color: $color-text-dark;
-    margin-bottom: 60px;
-
-     span {
-      color: $color-primary;
-    }
-  }
-
-  .values-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 40px;
-  }
-
-  .value-card {
-    text-align: center;
-
-    
-      .icon {
-  width: 60px;
-  height: 60px;
-  background: rgba($color-primary,0.2);
-  border-radius: 50%;
+/* ========== CART ITEM ========== */
+.cart-item {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto 20px;
+  gap: 12px;
+  padding: 10px 12px;
+  border: 1px solid $color-border;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
 
-  i {
-    font-size: 26px;
+.cart-item img {
+  width: 90px;
+  height: 90px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.item-title {
+  font-weight: 600;
+}
+
+.item-price {
+  font-weight: 600;
+  color: $color-primary;
+
+  
+}
+
+/* ========== QUANTITY ========== */
+.qty-box {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 6px;
+  border: 1px solid $color-border;
+  border-radius: 8px;
+  width: 110px;
+  justify-content: space-between;
+}
+
+.qty-btn {
+  border: none;
+  background: none;
+  font-size: 16px;
+  line-height: 1;
+  color: $color-primary;
+  cursor: pointer;
+}
+
+/* ========== SUMMARY ========== */
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  color: $color-text-light;
+}
+
+.summary-row strong {
+  color: $color-primary;
+}
+
+.summary-total {
+  border-top: 1px solid $color-border;
+  padding-top: 12px;
+  font-weight: 700;
+  color: $color-text-dark;
+}
+.summary-box h5 span{
+  color: $color-primary;
+}
+
+/* ========== BUTTONS ========== */
+.btn-orange {
+  background: linear-gradient(
+    135deg,
+    $color-primary,
+    $color-primary
+  );
+  color: $color-white;
+  border-radius: 12px;
+  padding: 12px;
+  font-weight: 600;
+  border: none;
+}
+
+.btn-outline-orange {
+  border: 1px solid $color-primary;
+  color: $color-primary;
+  border-radius: 12px;
+  padding: 10px;
+  background: transparent;
+}
+/* ========= DELETE BUTTON ========= */
+.delete-btn {
+  background: transparent;
+  border: none;
+  color: $color-text-light;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 4px;
+
+  &:hover {
     color: $color-primary;
   }
 }
 
-    h3 {
-      font-family: $font-heading;
-      font-size: 20px;
-      color: $color-text-dark;
-      margin-bottom: 10px;
-    }
-
-    p {
-      font-size: 15px;
-      color: $color-text-light;
-    }
-  }
+.qty-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-/* =====================
-   TEAM (BOOTSTRAP GRID)
-===================== */
-
-.team {
-  padding: 80px 0;
+.qty-btn {
+  border: 1px solid $color-border;
   background: $color-white;
-  text-align: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  font-weight: 600;
+  color: $color-text-dark;
 
-  h2 {
-    font-family: $font-heading;
-    font-size: 36px;
-    font-weight: 600;
-   
-    color: $color-text-dark ;
-    line-height: 1.2;
-
-    span {
-      font-size: 36px;
-      font-family: $font-heading;
-      color: $color-primary;                   
-      
-      font-weight: 600;
-    }
-
-    
-  }
-
-  .team-desc {
-    max-width: 650px;
-    margin: 10px auto 50px;
-    color: $color-text-light;
-    font-family: $font-body;
-  }
-
-  img {
-    width: 160px;
-    height: 160px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 3px solid $color-border;
-  }
-
-  h5 {
-    margin-top: 12px;
-    font-family: $font-heading;
-    color: $color-text-dark;
-  }
-
-  span {
-    font-size: 14px;
-    color: $color-text-light;
+  &:hover {
+    background: $color-bg-light;
   }
 }
 
-/* =====================
-   CTA
-===================== */
-
-.about-cta {
-  background: $color-primary;
-  padding: 80px 20px;
-  text-align: center;
-  i
-
-  h1 {
-    font-family: $font-heading;
-    font-size: 42px;
-    color: $color-white;
-  }
-
-  p {
-    margin: 15px 0 30px;
-    color: $color-white;
-  }
-
-  button {
-    background: $color-text-dark;
-    color: $color-white;
-    padding: 12px 30px;
-    border: none;
-    border-radius: 8px;
-    font-size: 15px;
-    cursor: pointer;
-
-    &:hover {
-      background: $color-primary-dark;
-    }
-  }
+/* ========== PAYMENT ========== */
+.payment span {
+  border: 1px solid $color-border;
+  border-radius: 8px;
+  padding: 6px 12px;
+  font-size: 14px;
+  color: $color-text-light;
 }
-}
+
 // Footer
 .footer {
     background-color: $color-footer-bg;

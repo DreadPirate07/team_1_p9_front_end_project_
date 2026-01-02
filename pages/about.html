@@ -11,17 +11,69 @@
   <!-- Bootstrap CSS-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+   
   <!-- CSS -->
   <link rel="stylesheet" href="../css/about.css">
 </head>
 
 <body>
+
+
+
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white py-3">
+            <div class="container">
+         
+                <a class="navbar__logo fw-bold fs-4" href="../index.html">
+                Furni<span style="color : #e3732d;">Fy</span>
+                </a>
+                
+          
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+           
+                <div class="collapse navbar-collapse" id="navbarContent">
+         
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                    <a class="nav-link fw-medium nav-page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link fw-medium  nav-page" href="./products.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link fw-medium nav-page" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link fw-medium nav-page" href="./contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                
+             
+                <div class="navbar__icons d-flex gap-3">
+                    <a href="#" class="text-secondary fs-5">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                    <a href="pages/login.html" class="text-secondary fs-5">
+                    <i class="fa-regular fa-user"></i>
+                    </a>
+                    <a href="pages/cart.html" class="text-secondary fs-5">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                </div>
+                </div>
+            </div>
+    </nav>
+
+    <main class="about-page">
   <!-- HERO -->
 <section class="about-hero">
   <div class="hero-overlay"></div>
   <div class="container">
   <div class="about-hero-content">
-    <h1>About <span>Serene Studio</span></h1>
+    <h1>About <span>FurniFy</span></h1>
     <p>Crafting beautiful spaces with timeless furniture pieces since 2015</p>
     </div>
   </div>
@@ -36,7 +88,7 @@
       <h2>Our <span>Story</span></h2>
 
       <p>
-        Serene Studio was born from a simple belief: every home deserves
+        Furnify was born from a simple belief: every home deserves
         furniture that combines beauty, comfort, and sustainability.
         What started as a small workshop has grown into a beloved
         destination for those seeking thoughtfully designed pieces.
@@ -69,7 +121,7 @@
 <!-- VALUES -->
 <!-- OUR VALUES -->
 <section class="our-values">
-  <h2>Our <Span> Values </Span></h2>
+  <h2>Our <span> Values </span></h2>
 
   <div class="values-grid">
     <div class="value-card">
@@ -147,6 +199,68 @@
   <p>Explore our collections and discover furniture that speaks to your style</p>
   <button>Shop Now</button>
 </section>
+    </main>
+
+<footer class="footer">
+        <div class="container">
+            <div class="newsletter">
+                <div class="newsletter__text">
+                    <i class="fa-regular fa-envelope"></i>
+                    <div>
+                        <h4>Subscribe to our Newsletter</h4>
+                        <p>Get latest updates on new products and special offers</p>
+                    </div>
+                </div>
+                <form class="newsletter__form">
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+
+            <hr class="footer__divider">
+
+            <div class="footer__links">
+                <div class="footer__col">
+                    <h3>FurniFy</h3>
+                    <p>Your one-stop destination for premium quality furniture and home decor. We bring style and comfort to your home.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer__col">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Track Order</a></li>
+                        <li><a href="#">Return & Exchange</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Store Locator</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h3>Contact Info</h3>
+                    <p>Customer Support:<br><strong>1800-123-4567</strong></p>
+                    <p>Email:<br>support@furnify.com</p>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>&copy; 2026 FurniFy. All rights reserved.</p>
+                <p>Crafted with care for your home</p>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>
