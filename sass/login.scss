@@ -1,0 +1,82 @@
+
+$primary: #fa6028;
+$primary-soft: rgba(250, 94, 40, 0.95);
+$primary-hover: #e66b2d;
+$white: #ffffff;
+$black: black;
+$shadow-soft: 0 12px 40px rgba(0, 0, 0, 0.08);
+$shadow-hover: 0 6px 16px rgba(250, 94, 40, 0.25);
+
+
+body {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+
+.brand {
+  color: $primary;
+  font-weight: bold;
+}
+
+.forgot {
+  color: $primary;
+}
+
+
+.login-box {
+  background: $white;
+  padding: 40px;
+  border-radius: 14px;
+  box-shadow: $shadow-soft;
+  width: 100%;
+  max-width: 420px;
+}
+
+
+.btn-login {
+  background-color: $primary-soft;
+  color: $white;
+  border: 2px solid $primary-soft;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.25s ease;
+
+  &:hover {
+    background-color: $primary-hover;
+    border-color: $primary-hover;
+    transform: translateY(-1px);
+    box-shadow: $shadow-hover;
+  }
+}
+
+.img-container {
+  background-image:
+    linear-gradient(
+      rgba(250, 94, 40, 0.7),
+      rgba(250, 94, 40, 0.7)
+    ),
+    url('https://images.unsplash.com/photo-1556912173-3bb406ef7e77?w=1200&h=1200&fit=crop');
+  background-size: cover;
+  background-position: center;
+}
+
+.social{
+    border-color: $black;
+}
+
+.social:hover{
+    border-color: $primary;
+    color: $primary;
+}
+
+
+
+.text-orange {
+  color: $primary-hover;
+}
+
+
+.overlay-content {
+  max-width: 500px;
+}
