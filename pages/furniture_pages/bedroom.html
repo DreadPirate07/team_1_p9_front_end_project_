@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bedroom</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../../css/livingroom.css" />
+    <link rel="stylesheet" href="../../css/styles.css">
+  </head>
+  
+  <body>
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white py-3">
+            <div class="container">
+         
+                <a class="navbar__logo fw-bold fs-4" href="#">
+                Furni<span style="color : #e3732d;">Fy</span>
+                </a>
+                
+          
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+           
+                <div class="collapse navbar-collapse" id="navbarContent">
+         
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                    <a class="nav-link fw-medium nav-page" href="../../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link fw-medium  nav-page" href="../products.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link fw-medium nav-page" href="../about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link fw-medium nav-page" href="../contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                
+             
+                <div class="navbar__icons d-flex gap-3">
+                    <a href="#" class="text-secondary fs-5">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                    <a href="../login.html" class="text-secondary fs-5">
+                    <i class="fa-regular fa-user"></i>
+                    </a>
+                    <a href="../cart.html" class="text-secondary fs-5">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                </div>
+                </div>
+            </div>
+    </nav>
+
+    <!-- <section class="hero border rounded container mb-0 ps-3">
+        <h1>Living Room</h1>
+        <p>Discover our curated collection of living room furniture</p>
+    </section> -->
+
+    <div id="carouselExampleCaptions" class="carousel slide carousel-container">
+ 
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <video class="d-block w-100" autoplay muted loop playsinline>
+        <source src="https://cdn.pixabay.com/video/2022/08/08/127112-737747526_large.mp4" type="video/mp4">
+      </video>
+      <!-- <div class="carousel-caption d-none d-md-block carousel-heading">
+        <h5>Living Room</h5>
+        <p>Sofa in a Living room in Home</p>
+      </div> -->
+      <div class="carousel-content">
+  <span class="category">Bedroom</span>
+  <h1>A Royal Comfort</h1>
+  <p>Beds crafted for modern living and timeless comfort.</p>
+  <button class="hero-btn">Shop Bedroom</button>
+</div>
+
+    </div>
+    <div class="carousel-item">
+      <video class="d-block w-100" autoplay muted loop playsinline>
+        <source src="https://www.pexels.com/download/video/7578550/" type="video/mp4">
+      </video>
+      <div class="carousel-content">
+  <!-- <span class="category">Living Room</span> -->
+  <h1>Beds</h1>
+  <p>For relaxing and working comfortably at home.</p>
+  <button class="hero-btn">Shop Beds</button>
+</div>
+
+    </div>
+    <div class="carousel-item">
+      <video class="d-block w-100" autoplay muted loop playsinline>
+        <source src="https://www.pexels.com/download/video/4505482/" type="video/mp4">
+      </video>
+      <div class="carousel-content">
+  <!-- <span class="category">Living Room</span> -->
+  <h1>Bedroom Essentials</h1>
+  <p>Elegant Bed units and furniture designed for modern living spaces.</p>
+  <button class="hero-btn">Explore Collection</button>
+</div>
+
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+    <div class="my-3 border border-2 rounded mt-1 pt-3 ps-3 breadcrumb-container">
+      <div class="breadcrumb-wrapper">
+  <nav class="breadcrumb">
+    <a href="../products.html">Products</a>
+    <span class="separator">/</span>
+    <span class="active">Bedroom</span>
+  </nav>
+</div>
+
+    </div>
+
+    
+      <div class="row g-4 sticky">
+        <section class="col-lg-3 ">
+          <div class="filter-box filter-container">
+            <h5>Filters</h5>
+
+            <div class="filter-group">
+              <h6>Price Range</h6>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" />
+                <label class="form-check-label">Under ₹5,000</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" />
+                <label class="form-check-label">₹5,000 - ₹10,000</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" />
+                <label class="form-check-label">₹10,000 - ₹20,000</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" />
+                <label class="form-check-label">₹20,000 - ₹50,000</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" />
+                <label class="form-check-label">Above ₹50,000</label>
+              </div>
+            </div>
+
+            <div class="filter-group">
+              <h6>Brand</h6>
+              <div class="form-check filter-option" >
+                <input class="form-check-input" type="checkbox" />
+                <label class="form-check-label">Urban Ladder</label>
+              </div>
+              <div class="form-check filter-option" >
+                <input class="form-check-input" type="checkbox" />
+                <label class="form-check-label">Pepperfry Exclusives</label>
+              </div>
+              <div class="form-check filter-option" >
+                <input class="form-check-input" type="checkbox" />
+                <label class="form-check-label">Wooden Street</label>
+              </div>
+              <div class="form-check" >
+                <input class="form-check-input" type="checkbox" />
+                <label class="form-check-label">Durian</label>
+              </div>
+              <div class="form-check" >
+                <input class="form-check-input" type="checkbox" />
+                <label class="form-check-label">Godrej Interior</label>
+              </div>
+              <div class="form-check" >
+                <input class="form-check-input" type="checkbox" />
+                <label class="form-check-label">Nilkamal</label>
+              </div>
+              <div class="form-check" >
+                <input class="form-check-input" type="checkbox" />
+                <label class="form-check-label">HomeTown</label>
+              </div>
+              <div class="form-check" >
+                <input class="form-check-input" type="checkbox" />
+                <label class="form-check-label">Royaloak</label>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="col-lg-9">
+          <div
+            class="products-header d-flex justify-content-between align-items-center mb-4"
+          >
+            <span class="fw-semibold">8 Products</span>
+            <select class="form-select w-auto">
+              <option>Featured</option>
+              <option>Price: Low to High</option>
+              <option>Price: High to Low</option>
+            </select>
+          </div>
+
+          
+          <div class="row g-4">
+            <div class="col-md-6 col-xl-4">
+              <div class="product-card">
+                <span class="discount">27% OFF</span>
+                <button class="wishlist">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+                <img src="https://images.unsplash.com/photo-1680503146454-04ac81a63550?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxiZWRyb29tJTIwZnVybml0dXJlJTIwYmVkfGVufDF8fHx8MTc2NjEyMTY1MXww&ixlib=rb-4.1.0&q=80&w=1080" alt="Sofa" />
+
+                <div class="card-body">
+                  <h6>Wooden Street</h6>
+                  <p>King Size Bed with Storage</p>
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i> 4.6 <span>(312 Ratings)</span>
+                  </div>
+                  <div class="price">₹32,999 <span>₹44,999</span></div>
+                  <button class="btn add-cart">
+                    <i class="fa-solid fa-cart-shopping"></i>Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-xl-4">
+              <div class="product-card">
+                <span class="discount">28% OFF</span>
+                <button class="wishlist">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+                <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=1080&h=1080&fit=crop" alt="Sofa" />
+
+                <div class="card-body">
+                  <h6>Urban Ladder</h6>
+                  <p>Queen Size Upholstered Bed - Grey</p>
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i> 4.5 <span>(245 Ratings)</span>
+                  </div>
+                  <div class="price">₹28,999 <span>₹39,999</span></div>
+                  <button class="btn add-cart"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-xl-4">
+              <div class="product-card">
+                <span class="discount">24% OFF</span>
+                <button class="wishlist">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+                <img src="https://images.unsplash.com/photo-1630699144552-b2b60b277b75?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3YXJkcm9iZSUyMGNsb3NldHxlbnwxfHx8fDE3NjYwODgwNzZ8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Table" />
+
+                <div class="card-body">
+                  <h6>Pepperfry Exclusives</h6>
+                  <p>3-Door Wardrobe with Mirror</p>
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i> 4.5 <span>(221 Ratings)</span>
+                  </div>
+                  <div class="price">₹18,999 <span>₹24,999</span></div>
+                  <button class="btn add-cart"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-xl-4">
+              <div class="product-card">
+                <span class="discount">33% OFF</span>
+                <button class="wishlist">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+                <img src="https://images.durian.in/Durian/durian/product/800x800/531341745315562.jpg?tr=w-439,pr-true,f-auto" alt="Table" />
+
+                <div class="card-body">
+                  <h6>Durian</h6>
+                  <p>Wooden Bedside Table Set of 2</p>
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i> 4.3 <span>(156 Ratings)</span>
+                  </div>
+                  <div class="price">₹7,999 <span>₹11,999</span></div>
+                  <button class="btn add-cart"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-xl-4">
+              <div class="product-card">
+                <span class="discount">29% OFF</span>
+                <button class="wishlist">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+                <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRwiYWCmhNnyn0k9HapvSRpZqRiuPX59-u2Di1Mx44U3GVN1sHMPi5KlMFSR5GjSHTrRBwFqN4_6nftsT6F_E-e0Pdcdmow" alt="Table" />
+
+                <div class="card-body">
+                  <h6>Godrej Interio</h6>
+                  <p>King Size Mattress - Memory Foam</p>
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i> 4.7 <span>(423 Ratings)</span>
+                  </div>
+                  <div class="price">₹24,999 <span>₹234,999</span></div>
+                  <button class="btn add-cart"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-xl-4">
+              <div class="product-card">
+                <span class="discount">32% OFF</span>
+                <button class="wishlist">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+                <img src="https://ik.imagekit.io/2xkwa8s1i/img/npl_modified_images/WCODCNTR4DWM/WCODCNTR4DWM_LS_1.jpg?tr=w-3840" alt="Table" />
+
+                <div class="card-body">
+                 <h6>Royaloak</h6>
+                  <p>Engineered Wood Chest of Drawers</p>
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i> 4.4 <span>(198 Ratings)</span>
+                  </div>
+                  <div class="price">₹12,999 <span>₹18,999</span></div>
+                  <button class="btn add-cart"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-xl-4">
+              <div class="product-card">
+                <span class="discount">25% OFF</span>
+                <button class="wishlist">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+                <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRd4E0uDMFyTHSrIT6EOP-Y12c0MNvw19Ypsnxeiu-89vl1mc5cS355j15xdSjQJx9eqxjw6rJdmmlQygUJJdQ-cmDOi3vcqBxYpZmkhiWn" alt="Table" />
+
+                <div class="card-body">
+                  <h6>Nilkamal</h6>
+                  <p>Single Bed with Headboard Storage</p>
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i> 4.2 <span>(134 Ratings)</span>
+                  </div>
+                  <div class="price">₹14,999 <span>₹19,999</span></div>
+                  <button class="btn add-cart"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-xl-4">
+              <div class="product-card">
+                <span class="discount">28% OFF</span>
+                <button class="wishlist">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+                <img src="https://m.media-amazon.com/images/I/61FM-FwXAfL._AC_UF894,1000_QL80_.jpg" alt="Table" />
+
+                <div class="card-body">
+                  <h6>Home Town</h6>
+                  <p>4-Door Sliding Wardrobe - Wenge</p>
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i> 4.6 <span>(289 Ratings)</span>
+                  </div>
+                  <div class="price">₹535,999 <span>₹49,999</span></div>
+                  <button class="btn add-cart"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    
+    
+    <footer class="footer mt-3">
+        <div class="container">
+            <div class="newsletter">
+                <div class="newsletter__text">
+                    <i class="fa-regular fa-envelope"></i>
+                    <div>
+                        <h4>Subscribe to our Newsletter</h4>
+                        <p>Get latest updates on new products and special offers</p>
+                    </div>
+                </div>
+                <form class="newsletter__form">
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+
+            <hr class="footer__divider">
+
+            <div class="footer__links">
+                <div class="footer__col">
+                    <h3>Serene Studio</h3>
+                    <p>Your one-stop destination for premium quality furniture and home decor. We bring style and comfort to your home.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer__col">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Track Order</a></li>
+                        <li><a href="#">Return & Exchange</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Store Locator</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h3>Contact Info</h3>
+                    <p>Customer Support:<br><strong>1800-123-4567</strong></p>
+                    <p>Email:<br>support@serenestudio.com</p>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>&copy; 2025 Serene Studio. All rights reserved.</p>
+                <p>Crafted with care for your home</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
