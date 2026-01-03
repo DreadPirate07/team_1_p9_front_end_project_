@@ -27,6 +27,12 @@ ul {
   list-style: none;
 }
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 .btn {
   padding: 12px 24px;
   border-radius: 6px;
@@ -64,6 +70,8 @@ ul {
   font-family: "Space Grotesk", sans-serif;
   font-size: 1.5rem;
   font-weight: bold;
+  color: #262626;
+  color: #1f2937;
 }
 .navbar__icons {
   display: flex;
