@@ -6,7 +6,6 @@ body {
 }
 
 .brand {
-  color: #fa6028;
   font-weight: bold;
   font-size: 40px;
 }
@@ -36,7 +35,7 @@ body {
   border: 1px solid #ddd;
 }
 
-form-control:focus {
+.form-control:focus {
   border-color: #fa5e28;
   box-shadow: 0 0 0 0.15rem rgba(250, 94, 40, 0.25);
 }
@@ -65,7 +64,7 @@ form-control:focus {
 }
 
 .img-container {
-  background-image: linear-gradient(rgba(250, 94, 40, 0.7), rgba(250, 94, 40, 0.7)), url("../images/login.jpeg");
+  background-image: linear-gradient(rgba(250, 94, 40, 0.7), rgba(250, 94, 40, 0.7)), url("https://images.unsplash.com/photo-1556912173-3bb406ef7e77?w=1200&h=1200&fit=crop");
   background-size: cover;
   background-position: center;
 }
@@ -109,6 +108,11 @@ form-control:focus {
 }
 
 .signup-link {
+  color: #fa6028;
+  text-decoration: none;
+}
+
+.index-link {
   color: #fa6028;
   text-decoration: none;
 }
