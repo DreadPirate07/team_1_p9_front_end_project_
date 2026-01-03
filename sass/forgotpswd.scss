@@ -1,18 +1,30 @@
-
-$primary: #fa6028;
-$primary-dark: #e66b2d;
-$white: #ffffff;
-$border-light: #ddd;
+// Variables
 $shadow-primary: rgba(250, 94, 40, 0.25);
-$font-main: "Space Grotesk", sans-serif;
+
+
+$color-primary: #e3732d; 
+$color-primary-dark: #c15817;
+$color-bg-light: #f9f9f9;
+$color-text-dark: #1f2937;
+$color-text-light: #6b7280;
+$color-white: #ffffff;
+$color-red: #d94343; 
+$color-footer-bg: #262626;
+$color-border: #e5e7eb;
+
+$font-heading: 'Space Grotesk', sans-serif;
+$font-body: 'Inter', sans-serif;
+$container-width: 1200px;
+
 
 
 body {
-  font-family: $font-main;
+  font-family: $font-body;
 }
 
 
-.brand {
+.brand {  
+  font-family: $font-heading;
   font-weight: bold;
   font-size: 40px;
 }
@@ -28,16 +40,16 @@ body {
 
 
 .forgot {
-  color: $primary;
+  color: $color-primary;
 }
 
 
 .form-control {
-  background-color: $white;
-  border: 1px solid $border-light;
+  background-color: $color-white;
+  border: 1px solid $color-border;
 
   &:focus {
-    border-color: $primary;
+    border-color: $color-primary;
     box-shadow: 0 0 0 0.15rem rgba(250, 94, 40, 0.25);
   }
 }
@@ -45,7 +57,7 @@ body {
 
 .btn-create {
   background-color: rgba(250, 94, 40, 0.95);
-  color: $white;
+  color: $color-white;
   border: 2px solid rgba(250, 94, 40, 0.95);
   padding: 12px;
   border-radius: 8px;
@@ -53,9 +65,9 @@ body {
   transition: all 0.25s ease;
 
   &:hover {
-    background-color: $primary-dark;
-    border-color: $primary-dark;
-    color: $white;
+    background-color: $color-primary-dark;
+    border-color: $color-primary-dark;
+    color: $color-white;
     transform: translateY(-1px);
     box-shadow: 0 6px 16px $shadow-primary;
   }
@@ -63,7 +75,7 @@ body {
 
 
 .login-link {
-  color: $primary;
+  color: $color-primary;
   text-decoration: none;
 
   &:hover {
