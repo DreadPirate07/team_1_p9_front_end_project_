@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap");
 
 body {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .brand {
+  font-family: "Space Grotesk", sans-serif;
   font-weight: bold;
   font-size: 40px;
 }
@@ -15,14 +15,13 @@ body {
   cursor: pointer;
 }
 
-
 .login-box {
-  background: transparent; 
-  margin-left: 90px; 
+  background: transparent;
+  margin-left: 90px;
   margin-right: 90px;
-  padding: 0;                
-  box-shadow: none;          
-  border-radius: 0;        
+  padding: 0;
+  box-shadow: none;
+  border-radius: 0;
   width: 150%;
 }
 
@@ -39,7 +38,6 @@ body {
   border-color: #fa5e28;
   box-shadow: 0 0 0 0.15rem rgba(250, 94, 40, 0.25);
 }
-
 
 .btn-login {
   background-color: rgba(250, 94, 40, 0.95);
@@ -64,7 +62,11 @@ body {
 }
 
 .img-container {
-  background-image: linear-gradient(rgba(250, 94, 40, 0.7), rgba(250, 94, 40, 0.7)), url("https://images.unsplash.com/photo-1556912173-3bb406ef7e77?w=1200&h=1200&fit=crop");
+  background-image: linear-gradient(
+      rgba(250, 94, 40, 0.7),
+      rgba(250, 94, 40, 0.7)
+    ),
+    url("https://images.unsplash.com/photo-1556912173-3bb406ef7e77?w=1200&h=1200&fit=crop");
   background-size: cover;
   background-position: center;
 }
@@ -92,7 +94,6 @@ body {
 .divider::after {
   margin-left: 10px;
 }
-
 
 .social {
   border-color: black;
@@ -124,5 +125,3 @@ body {
 .overlay-content {
   max-width: 500px;
 }
-
-/*# sourceMappingURL=login.css.map */
