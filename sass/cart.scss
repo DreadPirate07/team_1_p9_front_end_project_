@@ -196,16 +196,19 @@ ul { list-style: none; }
 
 /* ========== BUTTONS ========== */
 .btn-orange {
-  background: linear-gradient(
-    135deg,
-    $color-primary,
-    $color-primary
-  );
+  background: $color-primary;
   color: $color-white;
   border-radius: 12px;
   padding: 12px;
   font-weight: 600;
   border: none;
+  transition: background-color 0.3s ease,color 0.3s ease;
+
+
+  &:hover{
+    background-color: $color-primary-dark;
+    color: $color-white;
+  }
 }
 
 .btn-outline-orange {
@@ -214,6 +217,13 @@ ul { list-style: none; }
   border-radius: 12px;
   padding: 10px;
   background: transparent;
+  transition: background-color 0.3s ease,color 0.3s ease;
+
+   &:hover{
+    background-color: $color-primary;
+    color: $color-white;
+  }
+
 }
 /* ========= DELETE BUTTON ========= */
 .delete-btn {
