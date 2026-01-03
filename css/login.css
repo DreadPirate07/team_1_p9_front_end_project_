@@ -1,45 +1,23 @@
-@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&display=swap");
-
-
 body {
   font-family: "Space Grotesk", sans-serif;
 }
 
 .brand {
   font-weight: bold;
-  font-size: 40px;
 }
 
-.input-group-text {
-  background: #ffffff;
-  cursor: pointer;
+.forgot {
+  color: #e3732d;
 }
-
 
 .login-box {
-  background: transparent; 
-  margin-left: 90px; 
-  margin-right: 90px;
-  padding: 0;                
-  box-shadow: none;          
-  border-radius: 0;        
-  width: 150%;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 14px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 420px;
 }
-
-.login-box form {
-  padding: 10px 0;
-}
-
-.form-control {
-  background-color: #ffffff;
-  border: 1px solid #ddd;
-}
-
-.form-control:focus {
-  border-color: #fa5e28;
-  box-shadow: 0 0 0 0.15rem rgba(250, 94, 40, 0.25);
-}
-
 
 .btn-login {
   background-color: rgba(250, 94, 40, 0.95);
@@ -50,17 +28,11 @@ body {
   font-weight: 600;
   transition: all 0.25s ease;
 }
-
 .btn-login:hover {
   background-color: #e66b2d;
   border-color: #e66b2d;
-  color: #ffffff;
   transform: translateY(-1px);
   box-shadow: 0 6px 16px rgba(250, 94, 40, 0.25);
-}
-
-.forgot {
-  color: #fa6028;
 }
 
 .img-container {
@@ -69,56 +41,17 @@ body {
   background-position: center;
 }
 
-.divider {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: #888;
-  margin: 20px 0;
-  font-size: 14px;
-}
-
-.divider::before,
-.divider::after {
-  content: "";
-  flex: 1;
-  border-bottom: 1px solid #ddd;
-}
-
-.divider::before {
-  margin-right: 10px;
-}
-
-.divider::after {
-  margin-left: 10px;
-}
-
-
 .social {
-  border-color: black;
+  border-color: #1f2937;
 }
 
 .social:hover {
-  border-color: #fa6028;
-  color: #fa6028;
+  border-color: #e3732d;
+  color: #e3732d;
 }
 
 .text-orange {
-  color: #fa6028;
-}
-
-.signup-link {
-  color: #fa6028;
-  text-decoration: none;
-}
-
-.index-link {
-  color: #fa6028;
-  text-decoration: none;
-}
-
-.signup-link:hover {
-  text-decoration: underline;
+  color: #e66b2d;
 }
 
 .overlay-content {
