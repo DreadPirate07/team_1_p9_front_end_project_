@@ -1,26 +1,73 @@
-@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&display=swap");
-body {
-  font-family: "Space Grotesk", sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.title {
-  margin-top: 40px;
+body {
+  font-family: "Space-Grotesk", sans-serif;
+  color: #1f2937;
+  background-color: #ffffff;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.btn {
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  font-size: 1rem;
+}
+.btn-primary {
+  background-color: #e3732d;
+  color: #1f2937;
+}
+.btn-primary:hover {
+  background-color: #c15817;
+}
+.btn-outline {
+  background-color: transparent;
+  border: 2px solid #1f2937;
+  color: #1f2937;
+}
+.btn-outline:hover {
+  background-color: #1f2937;
+  color: #ffffff;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 20px 20px;
   background: #ffffff;
+  box-shadow: #262626;
 }
 .navbar__logo {
   font-family: "Space Grotesk", sans-serif;
   font-size: 1.5rem;
   font-weight: bold;
-  color: #1f2937;
-  text-decoration: none;
 }
+
 .navbar__icons {
   display: flex;
   gap: 20px;
@@ -31,8 +78,14 @@ body {
 .nav-page {
   color: #1f2937;
 }
+
 .nav-page:hover {
   color: #e3732d;
+}
+
+.title{
+  font-family: "Space Grotesk", sans-serif;
+  padding-top: 30px;
 }
 
 .contact-area {
@@ -89,8 +142,8 @@ body {
   background-color: #262626;
   color: #d1d5db;
   padding: 50px 0 20px;
-  font-family: "Inter", sans-serif;
 }
+
 .footer .newsletter {
   display: flex;
   justify-content: space-between;
@@ -109,27 +162,28 @@ body {
   color: #e3732d;
 }
 .footer .newsletter__text h4 {
-  color: #ffffff;
+  color: white;
   margin-bottom: 2px;
-  font-family: "Space Grotesk", sans-serif;
 }
+
 .footer .newsletter__text p {
   font-size: 0.9rem;
-  color: #9ca3af;
 }
+
 .footer .newsletter__form {
   display: flex;
   gap: 10px;
 }
+
 .footer .newsletter__form input {
   padding: 10px 15px;
   border-radius: 4px;
   border: 1px solid #444;
   background: #333;
-  color: #ffffff;
+  color: white;
   width: 300px;
-  font-family: "Inter", sans-serif;
 }
+
 .footer .newsletter__form button {
   padding: 10px 20px;
   background-color: #e3732d;
@@ -137,9 +191,8 @@ body {
   border-radius: 4px;
   cursor: pointer;
   font-weight: 600;
-  color: #000;
-  transition: background-color 0.3s;
 }
+
 .footer .newsletter__form button:hover {
   background-color: #c15817;
 }
@@ -159,11 +212,11 @@ body {
   min-width: 200px;
 }
 .footer__links .footer__col h3 {
-  color: #ffffff;
+  color: white;
   margin-bottom: 20px;
   font-size: 1.1rem;
-  font-family: "Space Grotesk", sans-serif;
 }
+
 .footer__links .footer__col p {
   font-size: 0.9rem;
   color: #9ca3af;
@@ -172,11 +225,7 @@ body {
   margin-left: -24px;
   margin-bottom: 10px;
 }
-.footer__links .footer__col ul li a {
-  color: #d1d5db;
-  text-decoration: none;
-  transition: color 0.3s;
-}
+
 .footer__links .footer__col ul li a:hover {
   color: #e3732d;
 }
@@ -194,8 +243,6 @@ body {
   align-items: center;
   justify-content: center;
   transition: 0.3s;
-  color: #ffffff;
-  text-decoration: none;
 }
 .footer__links .footer__col .social-icons a:hover {
   background: #e3732d;
@@ -208,8 +255,6 @@ body {
   justify-content: space-between;
   font-size: 0.85rem;
   color: #6b7280;
-  flex-wrap: wrap;
-  gap: 10px;
 }
 
-/*# sourceMappingURL=contact.css.map */
+/* #sourceMappingURL=styles.css.map */

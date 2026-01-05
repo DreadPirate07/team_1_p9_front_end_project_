@@ -181,12 +181,17 @@ ul {
 
 /* ========== BUTTONS ========== */
 .btn-orange {
-  background: linear-gradient(135deg, #e3732d, #e3732d);
+  background: #e3732d;
   color: #ffffff;
   border-radius: 12px;
   padding: 12px;
   font-weight: 600;
   border: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.btn-orange:hover {
+  background-color: #c15817;
+  color: #ffffff;
 }
 
 .btn-outline-orange {
@@ -195,6 +200,11 @@ ul {
   border-radius: 12px;
   padding: 10px;
   background: transparent;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.btn-outline-orange:hover {
+  background-color: #e3732d;
+  color: #ffffff;
 }
 
 /* ========= DELETE BUTTON ========= */

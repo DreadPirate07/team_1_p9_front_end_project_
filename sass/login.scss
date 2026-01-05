@@ -1,11 +1,21 @@
-
-$primary: #fa6028;
 $primary-soft: rgba(250, 94, 40, 0.95);
 $primary-hover: #e66b2d;
-$white: #ffffff;
-$black: black;
 $shadow-soft: 0 12px 40px rgba(0, 0, 0, 0.08);
 $shadow-hover: 0 6px 16px rgba(250, 94, 40, 0.25);
+
+$color-primary: #e3732d;
+$color-primary-dark: #c15817;
+$color-bg-light: #f9f9f9;
+$color-text-dark: #1f2937;
+$color-text-light: #6b7280;
+$color-white: #ffffff;
+$color-red: #d94343;
+$color-footer-bg: #262626;
+$color-border: #e5e7eb;
+
+$font-heading: 'Space Grotesk', sans-serif;
+$font-body: 'Inter', sans-serif;
+$container-width: 1200px;
 
 
 body {
@@ -14,17 +24,16 @@ body {
 
 
 .brand {
-  color: $primary;
   font-weight: bold;
 }
 
 .forgot {
-  color: $primary;
+  color: $color-primary;
 }
 
 
 .login-box {
-  background: $white;
+  background: $color-white;
   padding: 40px;
   border-radius: 14px;
   box-shadow: $shadow-soft;
@@ -35,7 +44,7 @@ body {
 
 .btn-login {
   background-color: $primary-soft;
-  color: $white;
+  color: $color-white;
   border: 2px solid $primary-soft;
   padding: 12px;
   border-radius: 8px;
@@ -52,22 +61,20 @@ body {
 
 .img-container {
   background-image:
-    linear-gradient(
-      rgba(250, 94, 40, 0.7),
-      rgba(250, 94, 40, 0.7)
-    ),
+    linear-gradient(rgba(250, 94, 40, 0.7),
+      rgba(250, 94, 40, 0.7)),
     url('https://images.unsplash.com/photo-1556912173-3bb406ef7e77?w=1200&h=1200&fit=crop');
   background-size: cover;
   background-position: center;
 }
 
-.social{
-    border-color: $black;
+.social {
+  border-color: $color-text-dark;
 }
 
-.social:hover{
-    border-color: $primary;
-    color: $primary;
+.social:hover {
+  border-color: $color-primary;
+  color: $color-primary;
 }
 
 
